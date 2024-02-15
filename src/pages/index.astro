@@ -4,6 +4,60 @@ import Button from '../components/Button.astro';
 ---
 <MainLayout title="Titel">
 	<article>
-		<p>Index indhold</p>
+		
+		<section>herounit -save the date og del med ven</section>
+
+		<section>hvad er digitalskrald</section>
+
+		<section>problemer med digtital skrald</section>
+
+		<section>vidste du!-yderliger infro</section>
+
+		<section>who to hvordan man fjerner digtital skrald</section>
+
+		<section>"hvor meget har jeg slettet"</section>
+
+		<section>nyhedsbrev?</section>
+		
+		<section class="max-w-lg mx-auto my-8 " id="form"> <!-- section til forms -->
+				
+			<h1 class="text-4xl font-bold">Køb bogen</h1>
+			<form action="">
+			<div>
+					<label for="antal">Antal:</label>
+					<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="number" name="antal" id="antal">
+			</div>
+			<div>
+					<label for="levering">Levering:</label>
+					<input type="radio"  name="Postnord" id="Postnord"><label for="Postnord">Postnord</label>
+					<input type="radio"  name="afhent" id="afhent"><label for="afhent">Afhent selv </label>
+			</div>
+			<div>
+				<label for="navn">Navn</label> <input placeholder="Navn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="navn" id="navn">
+			</div>
+			<div>
+				<label for="adr">Adresse</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="adr" id="adr">
+			
+			</div>
+			<div>
+				<!-- denne syntaks i alle med label og ife navn  -->
+				<label for="email">Email</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="email" name="email" id="email">
+			</div>
+			<div>
+				<label for="postby">Postnummer og by</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="postby" id="postby">
+			
+			</div>
+			<div>
+				<label for="tel">Telefon</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="tel" name="tel" id="tel">
+			</div>
+			<div>
+			<input class="inline-flex items-center" type="checkbox" name="nyhedbrev" id="nyhedbrev"> <label for="nyhedbrev">Ja til nyhedbrev og tilbud</label>
+			</div>
+			<div  class="mt-8">
+				<Button>Til betaling</Button>
+			</div>
+
+		</section>
+
 	</article>
 </MainLayout>
