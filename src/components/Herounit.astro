@@ -1,8 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import hund from '../assets/images/20210106_135512.jpg';
+
 ---
 <section class="grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
 			<div class="col-span-2">
 				<h1 class=" bg-yellow-400">Her skal der være et billede</h1>
+                <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
 
 			</div>
 
