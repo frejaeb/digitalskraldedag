@@ -1,86 +1,30 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-
+import Herounit from '../components/Herounit.astro';
+import Section1 from '../components/Section1.astro';
+import Section2 from '../components/Section2.astro';
+import Section3 from '../components/Section3.astro';
+import Section4 from '../components/Section4.astro';
+import Section5 from '../components/Section5.astro';
+import Section6 from '../components/Section6.astro';
 ---
 <MainLayout title="Titel">
 	<article>
 		
-		<section class="grid grid-cols-3 gap-6 items-center items-stretch">
-			<div class="col-span-2">
-				<h1 class=" bg-yellow-400">Her skal der være et billede</h1>
-
-			</div>
-
-			<div class="col-span-1">
-				<h1 class="bg-blue-400 p-6">herounit -save the date og del med ven</h1>
-			</div>
-			
-			herounit -save the date og del med ven</section>
-
-		<section>
-			<h2>Hvad er digtital skrald</h2>
-		</section>
-
-		<section>
-			<h2>problemer med digtital skrald</h2>
-		</section>
-
-		<section>
-			<h2>vidste du!</h2>
-			-yderliger infro
-		</section>
-
-		<section>
-			<h2>who to</h2>
-			 hvordan man fjerner digtital skrald
-		</section>
-
-		<section>
-			<h2>hvor meget har jeg slettet</h2>
-		</section>
-
-		<section>nyhedsbrev?</section>
+		<Herounit></Herounit>
 		
-		<section class="max-w-lg mx-auto my-8 " id="form"> <!-- section til forms -->
-				
-			<h1 class="text-4xl font-bold">Køb bogen</h1>
-			<form action="">
-			<div>
-					<label for="antal">Antal:</label>
-					<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="number" name="antal" id="antal">
-			</div>
-			<div>
-					<label for="levering">Levering:</label>
-					<input type="radio"  name="Postnord" id="Postnord"><label for="Postnord">Postnord</label>
-					<input type="radio"  name="afhent" id="afhent"><label for="afhent">Afhent selv </label>
-			</div>
-			<div>
-				<label for="navn">Navn</label> <input placeholder="Navn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="navn" id="navn">
-			</div>
-			<div>
-				<label for="adr">Adresse</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="adr" id="adr">
-			
-			</div>
-			<div>
-				<!-- denne syntaks i alle med label og ife navn  -->
-				<label for="email">Email</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="email" name="email" id="email">
-			</div>
-			<div>
-				<label for="postby">Postnummer og by</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="postby" id="postby">
-			
-			</div>
-			<div>
-				<label for="tel">Telefon</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="tel" name="tel" id="tel">
-			</div>
-			<div>
-			<input class="inline-flex items-center" type="checkbox" name="nyhedbrev" id="nyhedbrev"> <label for="nyhedbrev">Ja til nyhedbrev og tilbud</label>
-			</div>
-			<div  class="mt-8">
-				<Button>Til betaling</Button>
-			</div>
+		<Section1></Section1>
 
-		</section>
+		<Section2></Section2>
+
+		<Section3></Section3>
+
+		<Section4></Section4>
+
+		<Section5></Section5>
+
+		<Section6></Section6>
 
 	</article>
 </MainLayout>
