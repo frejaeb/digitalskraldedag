@@ -3,19 +3,21 @@ import { Image } from 'astro:assets';
 import hund from '../assets/images/20210106_135512.jpg';
 import Button from '../components/Button.astro';
 ---
-<section class="grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
+<section class=" grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
 			<div class="col-span-2">
 				<h1 class=" bg-yellow-400">Her skal der være et billede</h1>
-                <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                <Image src={hund} alt="A bird sitting on a nest of eggs." width="1000" height="250"/>
 
 			</div>
 
-			<div class="col-span-1">
-				<h1 class="bg-blue-400 p-6">herounit -save the date og del med ven</h1>
+			<div class="col-span-1 flex flex-col justify-center bg-blue-400">
+				<h1 class=" p-6">herounit -save the date og del med ven</h1>
+				
+				<div  class="mt-8">
+					<Button variant="secondary" size="large">Gem datoen</Button>	
+				</div>
 			</div>
 
-             <div  class="mt-8">
-				<Button variant="secondary" size="large">Gem datoen</Button>	
-			</div>
+             
 			
         </section>

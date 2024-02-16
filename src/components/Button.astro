@@ -7,7 +7,7 @@ const { variant= "primary", size = "medium" } = Astro.props;
  
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
 
-const buttonStyling = "bg-purple-500 font-semibold text-white px-8 py-2 rounded-lg"; 
+const buttonStyling = "bg-purple-500 font-semibold text-white rounded-lg inline-block"; 
 
  
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
@@ -25,11 +25,11 @@ const variantClasses = {
 
 const sizeClasses = {
 
-"large": "text-xl",
+"large": "text-xl px-8 py-2",/* -padding her */
 
-"medium": "tailwind classes her",
+"medium": "tailwind classes her px-8 py-2",
 
-"small": "text-sm"
+"small": "text-sm px-8 py-2"
 
 };
 ---
