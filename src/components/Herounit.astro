@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import hund from '../assets/images/20210106_135512.jpg';
-
+import Button from '../components/Button.astro';
 ---
 <section class="grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
 			<div class="col-span-2">
@@ -13,6 +13,9 @@ import hund from '../assets/images/20210106_135512.jpg';
 			<div class="col-span-1">
 				<h1 class="bg-blue-400 p-6">herounit -save the date og del med ven</h1>
 			</div>
+
+             <div  class="mt-8">
+				<Button variant="secondary" size="large">Gem datoen</Button>	
+			</div>
 			
-			herounit -save the date og del med ven
         </section>

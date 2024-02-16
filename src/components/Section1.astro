@@ -1,6 +1,19 @@
 ---
+import { Image } from 'astro:assets';
+import hund from '../assets/images/20210106_135512.jpg';
 ---
 
 		<section>
-			<h2>Hvad er digtital skrald</h2>
+            <div>
+                <h2>Hvad er digtital skrald</h2>
+                <p></p>
+            </div>
+			
+            <div class="mt-32 grid lg:grid-cols-3 mx-auto gap-4">
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>  
+            </div>
+
 		</section>
