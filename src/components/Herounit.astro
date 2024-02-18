@@ -1,17 +1,18 @@
 ---
 import { Image } from 'astro:assets';
 import hund from '../assets/images/20210106_135512.jpg';
+import Button from './Button.astro';
 
 ---
 <section class="grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
 			<div class="col-span-2">
-				<h1 class=" bg-yellow-400">Her skal der være et billede</h1>
                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
-
 			</div>
 
-			<div class="col-span-1">
-				<h1 class="bg-blue-400 p-6">herounit -save the date og del med ven</h1>
+			<div class="col-span-1 bg-green-800 p-6 flex flex-col items-center p-10">
+				<h1 class="font-bold text-2xl text-white">Digital skraldedag</h1>
+				<h2 class="font-medium text-white pt-3 mb-10"> 16 Marts, 2024</h2>
+				<Button variant="secondary" size="medium">Tilføj til din kalender</Button>
 			</div>
 			
 			herounit -save the date og del med ven
