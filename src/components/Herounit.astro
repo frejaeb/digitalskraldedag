@@ -1,19 +1,18 @@
 ---
 import { Image } from 'astro:assets';
-import hund from '../assets/images/20210106_135512.jpg';
+import hero from '../assets/images/hero.svg';
 import Button from './Button.astro';
 
 ---
-<section class=" grid grid-cols-3 gap-6 items-center items-stretch"><!-- section herounit-->
-			<div class="col-span-2">
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center"><!-- section herounit-->
+    <div class="col-span-1 md:col-span-2">
+        <Image src={hero} alt="A bird sitting on a nest of eggs." class="w-full h-full object-cover object-center"/>
+    </div>
 
-                <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
-			</div>
+    <div class="col-span-1 md:col-span-1 bg-green-800 p-6 md:p-10 flex flex-col items-center">
+        <h1 class="font-bold text-2xl text-white">Digital skraldedag</h1>
+        <h2 class="font-medium text-white pt-3 mb-10">16 Marts, 2024</h2>
+        <Button variant="secondary" size="medium">Tilføj til din kalender</Button>
+    </div>
+</section>
 
-			<div class="col-span-1 bg-green-800 p-6 flex flex-col items-center p-10">
-				<h1 class="font-bold text-2xl text-white">Digital skraldedag</h1>
-				<h2 class="font-medium text-white pt-3 mb-10"> 16 Marts, 2024</h2>
-				<Button variant="secondary" size="medium">Tilføj til din kalender</Button>
-			</div>
-
-        </section>
