@@ -1,6 +1,28 @@
 ---
+import { Image } from 'astro:assets';
+import hund from '../assets/images/20210106_135512.jpg';
+import Button from '../components/Button.astro';
 ---
 
-<section>
-			<h2>problemer med digtital skrald</h2>
+        <section class="max-w-5xl  mx-auto">
+                
+	        <div class="max-w-4xl mt-32 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+                <div class="text-center ">
+<Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250" class="inline"/>
+<p>ldfj blsdjfg ldsfkgj fdsl gjtlkgjldsfkgj dsflgj sdflkgj dslgjdsflg kjdsflkg jdslgk jdlkg dsjlkg sdjlgk dsfjlgk dsfjg lksdjgl kdsfjf</p>
+                </div>
+                 
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                 <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
+                 
+            </div>
+
+            <div  class=" mt-8 flex flex-row justify-center">
+				<Button variant="secondary" size="large">Inviter en ven</Button>	
+			</div>
+        <div>
+            <p>tekst</p>
+            <h3>overskrift</h3> 
+            <h3>overskrift</h3>   
+        </div>
 		</section>

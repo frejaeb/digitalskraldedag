@@ -4,8 +4,10 @@
 const { variant= "primary", size = "medium" } = Astro.props; 
 
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "text-white"; 
 
+const buttonStyling = " font-semibold text-white px-8 py-2 rounded-lg"; 
+
+ 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
     "primary": "bg-green-700 hover:bg-green-800 active:bg-green-900 rounded-lg animate__animated animate__pulse animate__infinite	infinite",
@@ -14,9 +16,13 @@ const variantClasses = {
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
 const sizeClasses = {
-    "large": "p-6",
-    "medium": "p-4",
-    "small": "p-2"
+
+"large": "text-xl",
+
+"medium": "tailwind classes her",
+
+"small": "text-sm"
+
 };
 ---
 <!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
