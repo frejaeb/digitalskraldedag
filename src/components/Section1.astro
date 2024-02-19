@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import hund from '../assets/images/20210106_135512.jpg';
+import brev from '../assets/images/brev.svg';
+import billede from '../assets/images/billede.svg';
+import klips from '../assets/images/klips.svg';
+import besked from '../assets/images/besked.svg';
 ---
 <section class="max-w-5xl mx-auto pt-10">
     <h2 class="font-bold text-xl text-lime-600 text-center">Digital skrald er alle de filer og data man har liggende og aldrig bruger</h2>
@@ -8,10 +11,10 @@ import hund from '../assets/images/20210106_135512.jpg';
 
     <div class="flex justify-center mt-10">
         <div class="max-w-4xl grid grid-cols-4 gap-2">
-            <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
-            <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
-            <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>
-            <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250"/>  
+            <Image src={brev} alt="A bird sitting on a nest of eggs." width="75" height="250"/>
+            <Image src={klips} alt="A bird sitting on a nest of eggs." width="75" height="250"/>
+            <Image src={billede} alt="A bird sitting on a nest of eggs." width="75" height="250"/>
+            <Image src={besked} alt="A bird sitting on a nest of eggs." width="75" height="250"/>  
         </div>
     </div>
 </section>
