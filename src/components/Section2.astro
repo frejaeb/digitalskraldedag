@@ -1,18 +1,20 @@
 ---
 import { Image } from 'astro:assets';
-import hund from '../assets/images/20210106_135512.jpg';
+import globe20 from '../assets/images/globe20.svg';
+import hund from '../assets/images/globe20.svg';
 import Button from '../components/Button.astro';
 ---
-<!-- evt gør dennne smaller i stedet for 5 så 3 -->
-        <section class="max-w-3xl  mx-auto">
+<!-- stil her på størrelsen 5xl -->
+        <section class="max-w-5xl  mx-auto">
                 <!-- classen inline gør at billed opfattees som tekst element  -->
                 <div class="pt-5">
                 <p>Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. Digitalt affald ligger i sikkerhedskopier på servere, der giver os skytjenester, og fortsætter med at forbruge elektricitet.</p>
                 </div>
-
-	        <div class="max-w-4xl mt-32 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+                
+<!-- stil her på størrelsen 5xl -->
+	        <div class="max-w-5xl mt-32 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
                         <div class="text-center">
-                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250" class="inline"/>
+                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="200" height="300" class="inline"/>
                         <p>tekst</p>
                         </div>
                  
@@ -21,7 +23,7 @@ import Button from '../components/Button.astro';
                         </div>
                
                         <div class="text-center ">
-                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250" class="inline"/>
+                        <Image src={globe20} alt="A bird sitting on a nest of eggs." width="500" height="700" class="inline"/>
                         </div>
                 </div>
 
