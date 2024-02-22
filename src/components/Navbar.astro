@@ -1,12 +1,13 @@
 ---
+import "../styles/global.css";
 ---
-<div x-data="{ showmenu: false }" class="py-4 fixed lg:static w-full gul" >
+<div x-data="{ showmenu: false }" class="py-4 fixed lg:static w-full gul section-background-animation" >
     <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
             <a href="#link1">Site logo</a>
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
-            <ul class="flex flex-row gap-7 px-8 text-s text-green-800 font-bold">
+            <ul class="flex flex-row gap-7 px-8 text-s text-green-800 font-bold ">
                 <li class=""><a href="#section1">Hvad er DCD</a></li>
                 <li class=""><a href="#section3">Vidste du</a></li>
                 <li class=""><a href="#section4">Digital oprydning</a></li>
@@ -17,7 +18,7 @@
         </nav>
         <button id="burgermenu" class="lg:hidden pr-4 text-s text-green-800 font-bold" x-on:click="showmenu = ! showmenu">Menu</button>
     </div>
-    <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+    <nav id="mobilmenu" class="flex flex-col content-center pt-4 section-background-animation" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul class="text-s text-green-800 font-bold">
             <li class="text-center py-2 border-y-2"><a href="#section1">Hvad er DCD</a></li>
