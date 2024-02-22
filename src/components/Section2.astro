@@ -1,39 +1,40 @@
 ---
 import { Image } from 'astro:assets';
-import hund from '../assets/images/20210106_135512.jpg';
+import globe20 from '../assets/images/globe20.svg';
+import hund from '../assets/images/globe20.svg';
 import Button from '../components/Button.astro';
 ---
-<!-- evt gør dennne smaller i stedet for 5 så 3 -->
-        <section class="max-w-3xl  mx-auto">
+<!-- stil her på størrelsen 5xl -->
+        <section class="max-w-5xl  mx-auto">
                 <!-- classen inline gør at billed opfattees som tekst element  -->
                 <div class="pt-5">
                 <p>Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. Digitalt affald ligger i sikkerhedskopier på servere, der giver os skytjenester, og fortsætter med at forbruge elektricitet.</p>
                 </div>
 
-	        <div class="max-w-4xl mt-32 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+<!-- stil her på størrelsen 5xl -->
+	        <div class="max-w-5xl mt-32 grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10">
                         <div class="text-center">
-                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250" class="inline"/>
-                        <p>tekst</p>
+                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="400" height="600" class="inline"/>
                         </div>
                  
                         <div class="text-center ">
-                         <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250 "class="inline"/>
+                         <Image src={hund} alt="A bird sitting on a nest of eggs." width="400" height="600 "class="inline"/>
                         </div>
                
                         <div class="text-center ">
-                        <Image src={hund} alt="A bird sitting on a nest of eggs." width="125" height="250" class="inline"/>
+                        <Image src={globe20} alt="A bird sitting on a nest of eggs." width="400" height="600" class="inline"/>
                         </div>
                 </div>
 
-                <div  class=" mt-8 flex flex-row justify-center">
+                <div  class=" mt-8 flex flex-row justify-center pt-10">
                        
 			<Button variant="primary" size="large" >Giv dit bidrag her</Button>	
 	        </div>
                 
-                <div>
+                <div class="pt-5">
                         <p  class="pt-5">Hvis vi sletter alle unødvendige filer, apps, fotos og videoer, sparer vi ikke kun en enorm mængde CO2, men vi forlænger også levetiden for vores gadgets, føler os mere afbalancerede, tager kontrol over vores liv, skaber nye digitale vaner og bliver mere effektive og tilfredse. Det lyder som en win-win!</p>
                         <h3 class="pt-10 font-bold text-xl text-lime-600 text-center">Vær cool - fodre ikke global opvarmning med digitalt affald!</h3> 
-                        <h3 class="pt-10 font-bold text-xl text-green-800 text-center">Nedbring din CO2-andel, deltag i Digital Oprydningsdag den 16. marts 2024!</h3>   
+                        <h3 class="pt-5 font-bold text-xl text-green-800 text-center">Nedbring din CO2-andel, deltag i Digital Oprydningsdag den 16. marts 2024!</h3>   
                 </div>
 	
         </section>
