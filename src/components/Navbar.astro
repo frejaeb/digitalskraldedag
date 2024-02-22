@@ -1,10 +1,14 @@
 ---
 import "../styles/global.css";
+import "../assets/images/"
 ---
 <div x-data="{ showmenu: false }" class="py-4 fixed lg:static w-full gul section-background-animation" >
     <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
-            <a href="#link1">Site logo</a>
+            <a href="#link1">Site logo
+                <Image src={brev} alt="A bird sitting on a nest of eggs." width="75" height="250"/>
+            </a>
+          
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
 
